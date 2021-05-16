@@ -1,0 +1,204 @@
+
+.content{
+
+  position: relative;
+
+
+  .container{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: 75px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+
+    .box{
+      background-color: rgb(247, 247, 247);
+      //background-color: rgba(90, 90, 90, 0.5);
+      border: 0.05px solid #ededed;
+      box-shadow: 4px 4px 23px -9px rgba(72, 72, 72, 0.4);
+      width: 30%;
+      padding: 55px 25px;
+      padding-bottom: 25px;
+      margin: 0 10px;
+      transition: 0.3s;
+
+      &-header{
+        margin-bottom: 75px;
+        p{
+          text-align: center;
+          font-size: 24px;
+          letter-spacing: 1.5px;
+          font-weight: bold;
+        }
+      }
+
+      &-body{
+
+        a{
+          text-decoration: none;
+        }
+
+        #address{
+          height: fit-content;
+          line-height: 25px;
+          p{
+            text-align: center;
+            font-size: 16px;
+            color: #202020;
+            font-weight: bold;
+          }
+        }
+
+        #button-maps{
+          width: 40%;
+          margin: auto;
+          margin-top: 30%;
+          background-color: #0e1113;
+          border: 0.6px solid #eaeaea;
+          border-radius: 3px;
+          padding: 8px 20px;
+          p{
+            color: #dfdfdf;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: linear .125s;
+          }
+          transition: linear .125s;
+        }
+
+
+        #button-maps:hover{
+          background-color: #3d3d3d;
+          transform: scale(1.02);
+          p{
+            color: white;
+          }
+        }
+
+        .phone, .whatsapp{
+          margin: 15px;
+          p{
+            text-align: center;
+          }
+        }
+
+        .phone p:nth-child(1), .whatsapp p:nth-child(1){
+          font-size: 15px;
+          font-weight: bold;
+          color: #252525;
+        }
+
+        .phone p:nth-child(2), .whatsapp p:nth-child(2){
+          margin-top: 6px;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        #button-contact{
+          display: flex;
+          margin: auto;
+          align-items: center;
+          width: 93%;
+          justify-content: center;
+          margin-top: 13%;
+
+          a{
+            width: 30%;
+            text-decoration: none;
+            color: #c5ff29;
+
+            .button-wa{
+              background-color: #4e832b;
+              padding: 10px 11px;
+              border-radius: 3px;
+              p{
+                text-align: center;
+                font-size: 13px;
+                letter-spacing: 0.5px;
+                //font-weight: bold;
+              }
+              transition: 0.2s;
+            }
+
+            .button-wa:hover{
+              background-color: #79a01f;
+              color: #d7ff00;
+              transform: scale(1.05);
+            }
+
+          }
+
+          .or{
+            margin: 0 5%;
+            p{
+              font-weight: bold;
+            }
+          }
+
+        }
+      }
+
+      .contact{
+        margin-top: 25px;
+
+        .olx{
+          .logo{
+            padding: 18px 10px;
+          }
+        }
+
+        div{
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          p, a{
+            font-weight: bold;
+            color: #858585;
+            font-size: 14px;
+            transition: 0.5s;
+            letter-spacing: 0.5px;
+          }
+
+          p:hover, a:hover{
+            color: black;
+          }
+
+
+          .logo{
+            border: 1px solid #c3c3c3;
+            border-radius: 100px;
+            padding: 10px;
+            margin-right: 10px;
+            transition: 0.3s;
+            background-color: #efefef;
+            img{
+              width: 35px;
+            }
+          }
+
+          .logo:hover{
+            transform: scale(1.1);
+            background-color: white;
+          }
+
+        }
+      }
+
+
+    }
+
+    .box:hover{
+      background-color: #ffffff;
+      //transform: scale(1.015);
+    }
+
+  }
+
+
+}
+

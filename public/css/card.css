@@ -1,0 +1,80 @@
+.card {
+  margin: 1%;
+  background-color: #f0f0f0;
+  border: 1px solid #e5e5e5;
+  box-shadow: 4px 4px 23px -9px rgba(72, 72, 72, 0.4);
+}
+.card a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.2s;
+}
+.card a img {
+  width: 16rem;
+  height: 260px;
+  margin-bottom: 10px;
+}
+.card a .header {
+  padding: 15px 15px;
+}
+.card a .header-name {
+  font-weight: bold;
+}
+.card a .header-type {
+  font-size: 13px;
+  color: #858585;
+}
+.card a .header-price {
+  margin-top: 10px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  color: #5c5c5c;
+  font-size: 15px;
+}
+.card .button {
+  padding: 15px 15px;
+}
+.card .button a {
+  text-decoration: none;
+}
+.card .button-update {
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.card .button-update:hover {
+  background-color: #7daaed;
+  color: white;
+}
+.card .button-update:active {
+  background-color: #4471ed;
+  color: white;
+}
+.card .button-delete {
+  background-color: #ff5d58;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.card .button-delete:hover {
+  background-color: #ff7f80;
+  color: white;
+}
+.card .button-delete:active {
+  background-color: #ff3a36;
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  background-color: white;
+}

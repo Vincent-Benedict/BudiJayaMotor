@@ -1,0 +1,93 @@
+.footer{
+
+  background-color: #252525;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  min-width: 900px;
+
+  .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    .company, .contact, .sosmed{
+      margin-top: 20px;
+    }
+
+    .sosmed{
+      a:hover{
+        color: white;
+      }
+    }
+
+    .sosmed div{
+      display: flex;
+      align-items: center;
+
+      a, p{
+        text-decoration: none;
+        color: #919191;
+      }
+    }
+
+    .body{
+      margin: 10px 0;
+      img{
+        margin-right: 7px;
+      }
+    }
+
+    div{
+      .header{
+        margin: 15px 0;
+        p{
+          font-size: 16px;
+          color: #b8b8b8;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+          text-align: left;
+        }
+      }
+
+      .body{
+        p{
+          margin: 5px 0;
+          font-size: 14px;
+          color: #919191;
+        }
+      }
+
+      a{
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      a:hover p{
+        color: white;
+      }
+
+    }
+
+    .logo{
+      width: 20%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      img{
+        margin: auto;
+      }
+      p{
+        color: #c5c5c5;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+        font-size: 18px;
+        width: fit-content;
+      }
+    }
+  }
+}

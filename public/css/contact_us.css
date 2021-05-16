@@ -1,0 +1,159 @@
+.content {
+  position: relative;
+}
+.content .container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 75px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+.content .container .box {
+  background-color: #f7f7f7;
+  border: 0.05px solid #ededed;
+  box-shadow: 4px 4px 23px -9px rgba(72, 72, 72, 0.4);
+  width: 30%;
+  padding: 55px 25px;
+  padding-bottom: 25px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.content .container .box-header {
+  margin-bottom: 75px;
+}
+.content .container .box-header p {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+.content .container .box-body a {
+  text-decoration: none;
+}
+.content .container .box-body #address {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 25px;
+}
+.content .container .box-body #address p {
+  text-align: center;
+  font-size: 16px;
+  color: #202020;
+  font-weight: bold;
+}
+.content .container .box-body #button-maps {
+  width: 40%;
+  margin: auto;
+  margin-top: 30%;
+  background-color: #0e1113;
+  border: 0.6px solid #eaeaea;
+  border-radius: 3px;
+  padding: 8px 20px;
+  transition: linear 0.125s;
+}
+.content .container .box-body #button-maps p {
+  color: #dfdfdf;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: linear 0.125s;
+}
+.content .container .box-body #button-maps:hover {
+  background-color: #3d3d3d;
+  transform: scale(1.02);
+}
+.content .container .box-body #button-maps:hover p {
+  color: white;
+}
+.content .container .box-body .phone, .content .container .box-body .whatsapp {
+  margin: 15px;
+}
+.content .container .box-body .phone p, .content .container .box-body .whatsapp p {
+  text-align: center;
+}
+.content .container .box-body .phone p:nth-child(1), .content .container .box-body .whatsapp p:nth-child(1) {
+  font-size: 15px;
+  font-weight: bold;
+  color: #252525;
+}
+.content .container .box-body .phone p:nth-child(2), .content .container .box-body .whatsapp p:nth-child(2) {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.content .container .box-body #button-contact {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 93%;
+  justify-content: center;
+  margin-top: 13%;
+}
+.content .container .box-body #button-contact a {
+  width: 30%;
+  text-decoration: none;
+  color: #c5ff29;
+}
+.content .container .box-body #button-contact a .button-wa {
+  background-color: #4e832b;
+  padding: 10px 11px;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.content .container .box-body #button-contact a .button-wa p {
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.content .container .box-body #button-contact a .button-wa:hover {
+  background-color: #79a01f;
+  color: #d7ff00;
+  transform: scale(1.05);
+}
+.content .container .box-body #button-contact .or {
+  margin: 0 5%;
+}
+.content .container .box-body #button-contact .or p {
+  font-weight: bold;
+}
+.content .container .box .contact {
+  margin-top: 25px;
+}
+.content .container .box .contact .olx .logo {
+  padding: 18px 10px;
+}
+.content .container .box .contact div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.content .container .box .contact div p, .content .container .box .contact div a {
+  font-weight: bold;
+  color: #858585;
+  font-size: 14px;
+  transition: 0.5s;
+  letter-spacing: 0.5px;
+}
+.content .container .box .contact div p:hover, .content .container .box .contact div a:hover {
+  color: black;
+}
+.content .container .box .contact div .logo {
+  border: 1px solid #c3c3c3;
+  border-radius: 100px;
+  padding: 10px;
+  margin-right: 10px;
+  transition: 0.3s;
+  background-color: #efefef;
+}
+.content .container .box .contact div .logo img {
+  width: 35px;
+}
+.content .container .box .contact div .logo:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+.content .container .box:hover {
+  background-color: #ffffff;
+}

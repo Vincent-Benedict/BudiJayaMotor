@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+.contain {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+  min-width: 900px;
+}
+.contain .content {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+}
+.contain .content-header {
+  background-color: #1e1e1e;
+  padding: 10px 30px;
+}
+.contain .content-header p {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.contain .content-body-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.contain .content-body-card .left, .contain .content-body-card .mid, .contain .content-body-card .right, .contain .content-body-card .right-card {
+  width: 30%;
+}
+.contain .content-body-card .mid {
+  text-align: center;
+}
+.contain .content-body-card .right {
+  text-align: right;
+}
+.contain .content-body-card .right-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contain .content-body-card .right-card .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ff5853;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contain .content-body-card .right-card .button:hover {
+  background-color: #ff7f80;
+  color: white;
+}
+.contain .content-body-card .right-card .button:active {
+  background-color: #ff3a36;
+  color: white;
+}
+.contain .content-body .title {
+  background-color: #9d9d9d;
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+.upopup {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1100;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.upopup-content {
+  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 200px;
+  background-color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 30px 40px;
+}
+.upopup-content-header p {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #5c5c5c;
+  line-height: 35px;
+}
+.upopup-content-header #popup_name {
+  color: black;
+}
+.upopup-content-body {
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.upopup-content-body .button-popup {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.upopup-content-body .yes {
+  background-color: #64a036;
+}
+.upopup-content-body .yes:hover {
+  background-color: #79c747;
+}
+.upopup-content-body .yes:active {
+  background-color: #427a32;
+}
+.upopup-content-body .no {
+  background-color: #ff5d58;
+}
+.upopup-content-body .no:hover {
+  background-color: #ff7f80;
+}
+.upopup-content-body .no:active {
+  background-color: #ff3a36;
+}
