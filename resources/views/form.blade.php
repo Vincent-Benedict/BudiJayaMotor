@@ -1,5 +1,13 @@
 @extends('layout.master')
 
+
+@section('extra-css')
+
+    <link rel="stylesheet" href="{{asset('css/form.css')}}">
+
+@endsection
+
+
 @section('content')
 
     <div class="content">
@@ -85,7 +93,9 @@
                     <textarea name="description" rows="15" cols="100"></textarea>
                 </div>
 
-                <input type="submit" value="Upload">
+                <div class="form-button">
+                    <input id="button" type="submit" value="Upload">
+                </div>
 
             </form>
 

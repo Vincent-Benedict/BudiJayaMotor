@@ -17,7 +17,6 @@
 
             <div class="body">
                 <a href="{{url('/home')}}"><p>Home</p></a>
-                <a href="{{url('/about')}}"><p>About</p></a>
                 <a href="{{url('/contact')}}"><p>Contact Us</p></a>
                 <a target="_blank" href="https://wa.me/message/KYYTTCHDE76BI1"><p>Chat via Whatsapp</p></a>
                 <a target="_blank" href="https://www.google.co.id/maps/place/Budi+Jaya+Motor/@-6.2652426,106.6512173,14.26z/data=!4m12!1m6!3m5!1s0x0:0xfe88c8031d033251!2sBudi+Jaya+Motor!8m2!3d-6.2604057!4d106.6531345!3m4!1s0x0:0xfe88c8031d033251!8m2!3d-6.2604057!4d106.6531345?hl=en-id"><p>View on Google Maps</p></a>

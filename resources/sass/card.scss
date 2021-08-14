@@ -4,26 +4,33 @@
     background-color: #f0f0f0;
     border: 1px solid #e5e5e5;
     box-shadow: 4px 4px 23px -9px rgba(72, 72, 72, 0.4);
+    max-width: 288px;
+    padding: 15px 15px;
+    max-width: 200px;
+    min-width: 260px;
 
    a{
      width: fit-content;
      img{
-       width :16rem;
+       width :100%;
+       max-width: 260px;
        height: 260px;
-       margin-bottom: 10px
+       margin-bottom: 10px;
      }
 
      transition: 0.2s;
 
      .header{
-       padding: 15px 15px;
+       width: 100%;
+       margin-bottom: 16px;
 
        &-name{
          font-weight: bold;
+         font-size: 1rem;
        }
 
        &-type{
-         font-size: 13px;
+         font-size: 0.8rem;
          color: #858585;
        }
 
@@ -32,14 +39,13 @@
          font-weight: bold;
          letter-spacing: 0.6px;
          color: #5c5c5c;
-         font-size: 15px;
+         font-size: 0.95rem;
        }
      }
 
    }
 
    .button{
-     padding: 15px 15px;
 
      a{
        text-decoration: none;
@@ -86,16 +92,28 @@
        color: white;
      }
    }
-
-
-
-
-
   }
  .card:hover{
    transform: scale(1.02);
    background-color: white;
  }
 
+
+
+@media screen and (max-width: 1052px){
+  .card{
+    a{
+      img{
+        width: 253px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .button{
+    margin-top: 5px;
+  }
+}
 
 

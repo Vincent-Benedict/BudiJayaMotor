@@ -9,34 +9,37 @@ header {
   position: sticky;
   top: 0;
   border-bottom: 1px solid #cfcfcf;
-  padding: 30px 0;
-  min-width: 900px;
+  padding: 2em 0;
   z-index: 1;
 }
 header .container {
+  width: 94%;
+  max-width: 1300px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: auto;
+  padding: 0.3em 0.5em;
 }
 header .container-left {
   width: 30%;
 }
 header .container-left p {
   color: black;
-  font-size: 25px;
+  font-size: 1.6em;
   font-weight: bolder;
+  text-align: center;
 }
 header .container-mid {
-  width: 45%;
+  width: 40%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 header .container-mid p {
   color: black;
   font-weight: bold;
+  font-size: 1em;
 }
 header .container-mid div a {
   text-decoration: none;
@@ -61,8 +64,8 @@ header .container-mid #account-hidden ul, header .container-mid #brand-hidden ul
   text-align: right;
 }
 header .container-mid #account-hidden ul li, header .container-mid #brand-hidden ul li {
-  padding: 12px 20px;
-  font-size: 15px;
+  padding: 0.8em 1.2em;
+  font-size: 0.9em;
   font-weight: bold;
   transition: 0.3s;
   color: black;
@@ -80,18 +83,18 @@ header .container-mid #account:hover #account-hidden, header .container-mid #bra
   display: block;
 }
 header .container-right {
-  width: 25%;
+  width: 18%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   position: relative;
 }
 header .container-right input {
-  width: 55%;
-  min-width: 168px;
-  padding: 5px 10px;
+  width: 100%;
+  min-width: 140px;
+  padding: 0.3em 0.7em;
   height: 20px;
-  font-size: 14px;
+  font-size: 0.9em;
   color: black;
   background-color: #e0e0e0;
   border-style: none;
@@ -129,6 +132,12 @@ header .container-right #searchResult {
   position: absolute;
   width: 100%;
   min-width: 280px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
   z-index: 1;
   top: 30px;
   right: 0%;
@@ -164,11 +173,11 @@ header .container-right #searchResult a .Item p {
 header .container-right #searchResult a .Item p:nth-child(1) {
   color: #202020;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 0.75em;
 }
 header .container-right #searchResult a .Item p:nth-child(2) {
   color: #6a6a6a;
-  font-size: 12px;
+  font-size: 0.7em;
 }
 header .container-right #searchResult a .Item:hover {
   background-color: #363636;
@@ -181,4 +190,60 @@ header .container-right #searchResult a .Item:hover p:nth-child(1) {
 header .container-right #searchResult a .Item:hover p:nth-child(2) {
   color: #cccccc;
   font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  header .container-left {
+    width: 20%;
+  }
+  header .container-left p {
+    font-size: 1.3em;
+  }
+  header .container-mid {
+    width: 45%;
+  }
+  header .container-right {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 14px;
+    padding: 0.5em 0;
+  }
+  header .container {
+    display: block;
+    width: 98% !important;
+    max-width: 700px !important;
+  }
+  header .container-left, header .containerright, header .container-mid {
+    width: 95% !important;
+    max-width: 700px !important;
+    margin: auto;
+  }
+  header .container-mid {
+    width: 95% !important;
+    justify-content: space-between;
+    max-width: 550px !important;
+  }
+  header .container-right, header .container-mid {
+    margin-top: 1em;
+  }
+  header .container-right {
+    width: 80% !important;
+    max-width: 500px !important;
+    margin: 1em auto;
+  }
+  header .container-right #searchResult {
+    min-width: 200px !important;
+  }
+  header .container-mid #account-hidden, header .container-mid #brand-hidden {
+    width: calc(2*100% + 90%) !important;
+    right: -10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    font-size: 11px;
+  }
 }

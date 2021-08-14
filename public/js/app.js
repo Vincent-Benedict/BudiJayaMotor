@@ -19165,6 +19165,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/form.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/form.scss ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/sass/form_user.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/form_user.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/index.scss":
 /*!***********************************!*\
   !*** ./resources/sass/index.scss ***!
@@ -19539,6 +19565,8 @@ process.umask = function() { return 0; };
 /******/ 			"css/footer": 0,
 /******/ 			"css/header": 0,
 /******/ 			"css/index": 0,
+/******/ 			"css/form_user": 0,
+/******/ 			"css/form": 0,
 /******/ 			"css/user_page": 0,
 /******/ 			"css/login": 0,
 /******/ 			"css/update_car": 0,
@@ -19592,18 +19620,20 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/index.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/header.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/footer.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/contact_us.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/card.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/detail_car.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/minor_style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/type_car.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/update_car.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/login.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/user_page.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/index.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/header.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/footer.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/contact_us.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/card.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/detail_car.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/minor_style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/type_car.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/update_car.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/login.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/user_page.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/form.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/card","css/contact_us","css/footer","css/header","css/index","css/form_user","css/form","css/user_page","css/login","css/update_car","css/type_car","css/minor_style","css/detail_car"], () => (__webpack_require__("./resources/sass/form_user.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

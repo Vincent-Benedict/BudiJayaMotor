@@ -4,11 +4,12 @@
 
 .contain {
   background-color: #f1f1f1;
-  padding: 50px 0;
-  min-width: 900px;
+  min-height: 50vh;
+  padding: 2rem 0;
 }
 .contain .content {
-  width: 80%;
+  width: 98%;
+  max-width: 1000px;
   margin: auto;
   background-color: white;
 }
@@ -17,7 +18,7 @@
   padding: 10px 30px;
 }
 .contain .content-header p {
-  font-size: 18px;
+  font-size: 1.1rem;
   color: white;
   font-weight: bold;
   text-align: center;
@@ -28,7 +29,7 @@
   align-items: center;
   padding: 10px 30px;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1rem;
 }
 .contain .content-body-card .left, .contain .content-body-card .mid, .contain .content-body-card .right, .contain .content-body-card .right-card {
   width: 30%;
@@ -67,6 +68,7 @@
   color: white;
   padding: 10px 30px;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .upopup {
@@ -81,7 +83,8 @@
   left: 0;
 }
 .upopup-content {
-  width: 40%;
+  width: 95%;
+  max-width: 600px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -96,7 +99,7 @@
 }
 .upopup-content-header p {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1em;
   letter-spacing: 0.8px;
   text-align: center;
   color: #5c5c5c;
@@ -136,4 +139,10 @@
 }
 .upopup-content-body .no:active {
   background-color: #ff3a36;
+}
+
+@media screen and (max-width: 500px) {
+  .upopup-content {
+    min-height: 150px;
+  }
 }

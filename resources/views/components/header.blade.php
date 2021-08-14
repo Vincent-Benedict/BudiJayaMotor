@@ -14,11 +14,11 @@
                     <p>Home</p>
                 </a>
             </div>
-            <div id="about">
+            {{-- <div id="about">
                 <a href="{{url('/about')}}">
                     <p>About</p>
                 </a>
-            </div>
+            </div> --}}
             <div id="brand">
                 <p>Brand</p>
 

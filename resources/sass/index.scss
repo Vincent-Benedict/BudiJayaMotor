@@ -4,10 +4,10 @@
 }
 
 .content{
-  padding: 30px 50px;
-  width: 85%;
+  padding: 30px 0px;
+  width: 98%;
   margin: auto;
-  min-width: 700px;
+  max-width: 1500px;
 
   .search{
     display: flex;
@@ -21,7 +21,7 @@
       p{
         color: black;
         font-weight: bold;
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
 
@@ -32,7 +32,7 @@
         background-color: rgb(234, 234, 234);
         border-style: none;
         border: 0.5px solid black;
-        font-size: 14px;
+        font-size: 0.9rem;
         transition: 0.5s;
         letter-spacing: 0.05rem;
       }
@@ -51,7 +51,7 @@
 
       .button{
         padding: 0.35rem 0.7rem;
-        font-size: 14px;
+        font-size: 0.9rem;
         transition: 0.1s;
         background-color: #1f1f1f;
         color: #e3e3e3;
@@ -75,6 +75,48 @@
     }
   }
 
+  #paginator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .pager{
+      list-style: none;
+      span, li{
+        color: white !important;
+        font-weight: bold;
+      }
+
+      a{
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      li{
+        display: inline;
+        background-color: #2b2b2b !important;
+        border: 1px solid #d6d6d6;
+        padding: 0.4em 0.5em;
+        border-radius: 15px;
+        color: white !important;
+        margin: 0 0.5em;
+        a{
+          color: white;
+        }
+      }
+
+
+      .my-active{
+          background-color: #8f8b8b !important;
+      }
+
+      .disabled{
+        color: black;
+      }
+
+    }
+
+  }
+
 }
 
 
@@ -90,8 +132,9 @@
   left: 0;
 
   &-content{
-    width: 40%;
+    width: 95%;
     height: fit-content;
+    max-width: 480px;
     min-height: 200px;
     background-color: white;
     position: relative;
@@ -162,11 +205,52 @@
   }
 }
 
-
 #originalResult{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 620px){
+  .content{
+    .search{
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  // form{
+  //   .type, .button{
+  //     font-size: 1.5rem;
+  //   }
+  // }
+
+  .content{
+    .search{
+      form{
+        .type, .button{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 320px){
+  .content{
+    .search{ 
+      form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5px;
+      }
+    }
+  }
 }
 

@@ -13,13 +13,20 @@ class CarController extends Controller
         return view('index');
     }
 
-    public function index(){
-        $cars = Car::with('getType')->Paginate(8);
+    public function index(Request $request){
+        if ($request->query('keyword') == null) {
+            $cars = Car::with('getType')->Paginate(20);
+        }
+        else {
+            $page = $request->query('page');
+            $cars = Car::with('getType')->where('name', 'like', "%".$request->keyword."%")
+                ->skip(($page - 1) * 20)->paginate(20);
+        }
         return view('index')->with('cars', $cars);
     }
 
     public function search(Request $request){
-        $cars = Car::with('getType')->where('name', 'like', "%".$request->keyword."%")->Paginate(8);
+        $cars = Car::with('getType')->where('name', 'like', "%".$request->keyword."%")->Paginate(20);
         $cars->appends($request->only('keyword'));
         return view('index')->with('cars', $cars);
     }

@@ -22,4 +22,6 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/type_car.scss', 'public/css')
     .sass('resources/sass/update_car.scss', 'public/css')
     .sass('resources/sass/login.scss', 'public/css')
-    .sass('resources/sass/user_page.scss', 'public/css');
+    .sass('resources/sass/user_page.scss', 'public/css')
+    .sass('resources/sass/form.scss', 'public/css')
+    .sass('resources/sass/form_user.scss', 'public/css')

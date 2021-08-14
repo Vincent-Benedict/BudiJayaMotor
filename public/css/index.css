@@ -4,10 +4,10 @@
 }
 
 .content {
-  padding: 30px 50px;
-  width: 85%;
+  padding: 30px 0px;
+  width: 98%;
   margin: auto;
-  min-width: 700px;
+  max-width: 1500px;
 }
 .content .search {
   display: flex;
@@ -20,7 +20,7 @@
 .content .search-header p {
   color: black;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .content .search form .type {
   padding: 0.35rem 0.7rem;
@@ -28,7 +28,7 @@
   background-color: #eaeaea;
   border-style: none;
   border: 0.5px solid black;
-  font-size: 14px;
+  font-size: 0.9rem;
   transition: 0.5s;
   letter-spacing: 0.05rem;
 }
@@ -58,7 +58,7 @@
 }
 .content .search form .button {
   padding: 0.35rem 0.7rem;
-  font-size: 14px;
+  font-size: 0.9rem;
   transition: 0.1s;
   background-color: #1f1f1f;
   color: #e3e3e3;
@@ -76,6 +76,40 @@
   color: #ffffff;
   transform: scale(0.98);
 }
+.content #paginator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content #paginator .pager {
+  list-style: none;
+}
+.content #paginator .pager span, .content #paginator .pager li {
+  color: white !important;
+  font-weight: bold;
+}
+.content #paginator .pager a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+.content #paginator .pager li {
+  display: inline;
+  background-color: #2b2b2b !important;
+  border: 1px solid #d6d6d6;
+  padding: 0.4em 0.5em;
+  border-radius: 15px;
+  color: white !important;
+  margin: 0 0.5em;
+}
+.content #paginator .pager li a {
+  color: white;
+}
+.content #paginator .pager .my-active {
+  background-color: #8f8b8b !important;
+}
+.content #paginator .pager .disabled {
+  color: black;
+}
 
 .popup {
   display: none;
@@ -89,10 +123,11 @@
   left: 0;
 }
 .popup-content {
-  width: 40%;
+  width: 95%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  max-width: 480px;
   min-height: 200px;
   background-color: white;
   position: relative;
@@ -151,4 +186,24 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 620px) {
+  .content .search {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content .search form .type, .content .search form .button {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .content .search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+  }
 }

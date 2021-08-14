@@ -1,31 +1,28 @@
-.content {
-  position: relative;
-}
 .content .container {
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 75px auto;
+  margin: 4rem auto;
+  width: 98%;
+  max-width: 1150px;
   display: flex;
   justify-content: space-between;
-  width: 75%;
+  flex-wrap: wrap;
 }
 .content .container .box {
   background-color: #f7f7f7;
+  box-sizing: border-box;
   border: 0.05px solid #ededed;
   box-shadow: 4px 4px 23px -9px rgba(72, 72, 72, 0.4);
-  width: 30%;
-  padding: 55px 25px;
-  padding-bottom: 25px;
-  margin: 0 10px;
+  width: 32%;
+  padding: 3.5em 1.5em;
+  padding-bottom: 1.5em;
   transition: 0.3s;
 }
 .content .container .box-header {
-  margin-bottom: 75px;
+  margin-bottom: 4.5em;
 }
 .content .container .box-header p {
   text-align: center;
-  font-size: 24px;
-  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 .content .container .box-body a {
@@ -39,7 +36,7 @@
 }
 .content .container .box-body #address p {
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   color: #202020;
   font-weight: bold;
 }
@@ -50,7 +47,7 @@
   background-color: #0e1113;
   border: 0.6px solid #eaeaea;
   border-radius: 3px;
-  padding: 8px 20px;
+  padding: 0.5em 1.25em;
   transition: linear 0.125s;
 }
 .content .container .box-body #button-maps p {
@@ -68,19 +65,19 @@
   color: white;
 }
 .content .container .box-body .phone, .content .container .box-body .whatsapp {
-  margin: 15px;
+  margin: 1em;
 }
 .content .container .box-body .phone p, .content .container .box-body .whatsapp p {
   text-align: center;
 }
 .content .container .box-body .phone p:nth-child(1), .content .container .box-body .whatsapp p:nth-child(1) {
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   color: #252525;
 }
 .content .container .box-body .phone p:nth-child(2), .content .container .box-body .whatsapp p:nth-child(2) {
-  margin-top: 6px;
-  font-size: 18px;
+  margin-top: 0.4em;
+  font-size: 1.15rem;
   font-weight: bold;
 }
 .content .container .box-body #button-contact {
@@ -98,13 +95,13 @@
 }
 .content .container .box-body #button-contact a .button-wa {
   background-color: #4e832b;
-  padding: 10px 11px;
+  padding: 0.6em 0.6em;
   border-radius: 3px;
   transition: 0.2s;
 }
 .content .container .box-body #button-contact a .button-wa p {
   text-align: center;
-  font-size: 13px;
+  font-size: 0.8rem;
   letter-spacing: 0.5px;
 }
 .content .container .box-body #button-contact a .button-wa:hover {
@@ -116,23 +113,37 @@
   margin: 0 5%;
 }
 .content .container .box-body #button-contact .or p {
+  font-size: 1rem;
   font-weight: bold;
 }
 .content .container .box .contact {
-  margin-top: 25px;
+  margin: 1.5em auto;
+  width: 100%;
 }
-.content .container .box .contact .olx .logo {
-  padding: 18px 10px;
-}
-.content .container .box .contact div {
+.content .container .box .contact .olx, .content .container .box .contact .instagram, .content .container .box .contact .email {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  width: 100%;
+}
+.content .container .box .contact .olx .div-logo, .content .container .box .contact .instagram .div-logo, .content .container .box .contact .email .div-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .container .box .contact .olx .desc-contact, .content .container .box .contact .instagram .desc-contact, .content .container .box .contact .email .desc-contact {
+  margin-left: 2%;
+  width: 90%;
+}
+.content .container .box .contact .olx .logo {
+  padding: 1.2em 0.7em;
+}
+.content .container .box .contact div {
+  margin-bottom: 0.7em;
 }
 .content .container .box .contact div p, .content .container .box .contact div a {
   font-weight: bold;
   color: #858585;
-  font-size: 14px;
+  font-size: 0.8rem;
   transition: 0.5s;
   letter-spacing: 0.5px;
 }
@@ -142,13 +153,15 @@
 .content .container .box .contact div .logo {
   border: 1px solid #c3c3c3;
   border-radius: 100px;
-  padding: 10px;
-  margin-right: 10px;
+  padding: 0.7em;
   transition: 0.3s;
   background-color: #efefef;
 }
 .content .container .box .contact div .logo img {
   width: 35px;
+}
+.content .container .box .contact div .logo #email-img {
+  width: 28px;
 }
 .content .container .box .contact div .logo:hover {
   transform: scale(1.1);
@@ -156,4 +169,65 @@
 }
 .content .container .box:hover {
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 1050px) {
+  .content .container {
+    margin: 3rem auto;
+    justify-content: center;
+  }
+  .content .container .box {
+    width: 48% !important;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .content .container .box-header {
+    margin-bottom: 2.5em;
+  }
+  .content .container .box .contact .olx, .content .container .box .contact .instagram, .content .container .box .contact .email {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .content .container .box .contact .olx .desc-contact, .content .container .box .contact .instagram .desc-contact, .content .container .box .contact .email .desc-contact {
+    width: 100%;
+    margin-left: 0;
+  }
+  .content .container .box .contact .olx .desc-contact p, .content .container .box .contact .instagram .desc-contact p, .content .container .box .contact .email .desc-contact p {
+    text-align: center;
+  }
+  .content .container .box:nth-child(3) {
+    margin-top: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content .container {
+    margin: 2rem auto;
+  }
+  .content .container .box {
+    width: 98% !important;
+  }
+  .content .container .box-header {
+    margin-bottom: 2em;
+  }
+  .content .container .box .contact .olx .logo, .content .container .box .contact .instagram .logo, .content .container .box .contact .email .logo {
+    padding: 13px 0.7em;
+  }
+  .content .container .box .contact .olx .logo img, .content .container .box .contact .instagram .logo img, .content .container .box .contact .email .logo img {
+    width: 32px;
+  }
+  .content .container .box .contact .olx .logo #email-img, .content .container .box .contact .instagram .logo #email-img, .content .container .box .contact .email .logo #email-img {
+    width: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content .container {
+    margin: 2rem auto;
+  }
+  .content .container .box .contact .olx img, .content .container .box .contact .instagram img, .content .container .box .contact .email img {
+    width: 28px;
+  }
+  .content .container .box .contact .olx #email-img, .content .container .box .contact .instagram #email-img, .content .container .box .contact .email #email-img {
+    width: 21px;
+  }
 }

@@ -1,0 +1,30 @@
+.container-form {
+  width: 98%;
+  max-width: 700px;
+  margin: 2em auto;
+  min-height: 50vh;
+}
+.container-form form .form-section {
+  margin: 20px 0;
+}
+.container-form form .form-section input, .container-form form .form-section select {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+.container-form form .form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-form form .form-button #button {
+  margin: auto;
+  background-color: #393939;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+}

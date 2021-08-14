@@ -30,19 +30,22 @@
 
         <div class="container" style="color: white;">
 
-            <div id="originalResult">
-                @foreach($cars as $key => $car)
-                    @include('components.card', ['car' => $car])
-                @endforeach
-            </div>
+            @if (count($cars) > 0)
+                <div id="originalResult">
+                    @foreach($cars as $key => $car)
+                        @include('components.card', ['car' => $car])
+                    @endforeach
+                </div>
+            @else
+                <h1 style="display: flex; justify-content: center; align-items: center; color: #333; height: 50vh">No cars found</h1>
+            @endif
 
             <br><br><br>
-
-
+            
         </div>
 
-        <div>
-            {{$cars->links()}}
+        <div id="paginator">
+            {{$cars->links('vendor.pagination.custom')}}
         </div>
     </div>
 

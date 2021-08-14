@@ -5,10 +5,12 @@
 
 .contain{
   background-color: #f1f1f1;
-  padding: 50px 0;
-  min-width: 900px;
+  min-height: 50vh;
+  padding: 2rem 0;
+
   .content{
-    width: 80%;
+    width: 98%;
+    max-width: 1000px;
     margin: auto;
     background-color: white;
 
@@ -17,7 +19,7 @@
       background-color: #1e1e1e;
       padding: 10px 30px;
       p{
-        font-size: 18px;
+        font-size: 1.1rem;
         color: white;
         font-weight: bold;
         text-align: center;
@@ -32,7 +34,7 @@
         align-items: center;
         padding: 10px 30px;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 1rem;
 
 
         .left, .mid, .right, .right-card{
@@ -77,6 +79,7 @@
         color: white;
         padding: 10px 30px;
         font-weight: bold;
+        font-size: 1rem;
       }
 
 
@@ -98,7 +101,8 @@
   left: 0;
 
   &-content{
-    width: 40%;
+    width: 95%;
+    max-width: 600px;
     height: fit-content;
     min-height: 200px;
     background-color: white;
@@ -112,7 +116,7 @@
     &-header{
       p{
         font-weight: bold;
-        font-size: 16px;
+        font-size: 1em;
         letter-spacing: 0.8px;
         text-align: center;
         color: #5c5c5c;
@@ -167,6 +171,16 @@
 
     }
 
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .upopup{
+    &-content{
+      min-height: 150px;
+    }
   }
 }
 

@@ -25,6 +25,8 @@ Route::post('/home', [CarController::class, 'search']);
 Route::get('/about', [PageController::class, 'about']);
 Route::get('/contact', [PageController::class, 'contact']);
 Route::post('/search', [CarController::class, 'liveSearch']);
+Route::post('/type/search', [CarController::class, 'liveSearch']);
+Route::post('/detail_car/search', [CarController::class, 'liveSearch']);
 Route::get('/detail_car/{id}', [CarController::class, 'detailCar']);
 Route::get('/type/{type_name}', [TypeController::class, 'index']);
 

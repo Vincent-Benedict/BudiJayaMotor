@@ -1,20 +1,18 @@
 .footer {
   background-color: #252525;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 1.9em 0 3em 0;
   box-sizing: border-box;
-  min-width: 900px;
 }
 .footer .container {
-  width: 90%;
+  width: 96%;
+  max-width: 1200px;
   margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer .container .company, .footer .container .contact, .footer .container .sosmed {
-  margin-top: 20px;
+  margin-top: 1.2em;
 }
 .footer .container .sosmed a:hover {
   color: white;
@@ -26,37 +24,44 @@
 .footer .container .sosmed div a, .footer .container .sosmed div p {
   text-decoration: none;
   color: #919191;
+  font-size: 0.9rem;
+}
+.footer .container .company {
+  width: 15%;
+}
+.footer .container .contact, .footer .container .sosmed {
+  width: 23%;
 }
 .footer .container .body {
-  margin: 10px 0;
+  margin: 0.8em 0;
 }
 .footer .container .body img {
   margin-right: 7px;
 }
 .footer .container div .header {
-  margin: 15px 0;
+  margin: 0.9em 0;
 }
 .footer .container div .header p {
-  font-size: 16px;
+  font-size: 1rem;
   color: #b8b8b8;
   font-weight: bold;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
   text-align: left;
 }
 .footer .container div .body p {
-  margin: 5px 0;
-  font-size: 14px;
+  margin: 0.3em 0;
+  font-size: 0.9rem;
   color: #919191;
 }
 .footer .container div a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 .footer .container div a:hover p {
   color: white;
 }
 .footer .container .logo {
-  width: 20%;
+  width: 25%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -68,8 +73,55 @@
   color: #c5c5c5;
   letter-spacing: 0.5px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.1rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+@media screen and (max-width: 1050px) {
+  html {
+    font-size: 15px !important;
+  }
+
+  .container .logo, .container .company, .container .contact, .container .sosmed {
+    width: 50% !important;
+  }
+  .container .company, .container .contact, .container .sosmed, .container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .company a, .container .company p, .container .contact a, .container .contact p, .container .sosmed a, .container .sosmed p, .container .logo a, .container .logo p {
+    text-align: center;
+  }
+  .container .logo img {
+    width: 20%;
+  }
+  .container div .header {
+    margin: 0.5em !important;
+  }
+  .container div .body {
+    margin: 0.2em !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px !important;
+  }
+
+  .footer {
+    padding: 0.1em 0 1.5em 0;
+  }
+
+  .container .logo, .container .company, .container .contact, .container .sosmed {
+    width: 100% !important;
+  }
+  .container .logo img {
+    width: 25%;
+  }
+  .container div .header {
+    margin: 0.1em !important;
+  }
 }

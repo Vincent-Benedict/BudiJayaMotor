@@ -16,7 +16,7 @@
                 <div class="content-header-slides">
 
                     <div class="content-header-slides-main">
-                        <img id="featured" width="300px" src="{{url('/storage_upload/'.$car->image)}}" alt="">
+                        <img id="featured" src="{{url('/storage_upload/'.$car->image)}}" alt="">
                     </div>
 
                     <div class="content-header-slides-thumbnail">

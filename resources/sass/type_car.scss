@@ -1,22 +1,18 @@
-
-
 .container{
-
-  min-width: 800px;
 
   .content{
 
-    width: 80%;
-    margin: 50px auto;
-    min-width: 700px;
+    width: 98%;
+    margin: 3em auto;
+    max-width: 1000px;
 
     &-header{
       background-color: #202020;
       color: white;
-      padding: 17px 35px;
+      padding: 1em 2em;
       border-radius: 3px;
       p{
-        font-size: 2.3rem;
+        font-size: 1.5rem;
         font-weight: bold;
         letter-spacing: 1.5px;
       }
@@ -25,7 +21,7 @@
     &-body{
 
       .no-card{
-        padding: 60px 35px;
+        padding: 3.8em 2em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -33,8 +29,8 @@
         border: 2px solid #eeeeee;
         box-shadow: 4px 4px 23px -9px rgba(117, 117, 117, 0.4);
         img{
-          width: 50%;
-          margin-bottom: 50px;
+          width: 60%;
+          margin-bottom: 3em;
         }
 
         .desc{
@@ -43,7 +39,7 @@
         }
 
         .desc p:nth-child(1){
-          font-size: 26px;
+          font-size: 1.5rem;
           font-weight: bolder;
           color: #1e1e1e;
           margin-bottom: 20px;
@@ -51,14 +47,13 @@
         }
 
         .desc p:nth-child(2){
+          font-size: 1rem;
           font-weight: bold;
           letter-spacing: 0.5px;
           line-height: 25px;
           color: #a4a4a4;
         }
-
       }
-
 
       .card:hover{
         box-shadow: 4px 4px 23px -9px rgba(72, 72, 72, 0.4);
@@ -66,14 +61,13 @@
         background-color: white;
       }
       .card{
-        padding: 20px 35px;
+        padding: 1.2em 2em;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #f2f2f2;
-        margin-bottom: 4px;
+        margin-bottom: 0.2em;
         transition: 0.2s;
-        //box-shadow: 4px 4px 23px -9px rgba(72, 72, 72, 0.4);
 
         &-left{
           display: flex;
@@ -84,12 +78,11 @@
             margin-right: 2%;
             width: 200px;
             height: 180px;
-
           }
 
           &-desc{
             p{
-              margin: 8px 0;
+              margin: 0.5em 0;
               font-weight: bold;
             }
           }
@@ -117,7 +110,7 @@
               width: 80%;
               min-width: 100px;
               margin: auto;
-              padding: 10px 15px;
+              padding: 0.5em 1em;
               background-color: #242424;
               color: whitesmoke;
               border-radius: 10px;
@@ -125,7 +118,7 @@
               border: 2px solid black;
               p{
                 text-align: center;
-                font-size: 15px;
+                font-size: 1rem;
                 letter-spacing: 0.8px;
                 font-weight: bold;
               }
@@ -141,12 +134,111 @@
               color: whitesmoke;
             }
           }
-
         }
-
       }
     }
-
   }
 }
+
+
+
+
+@media screen and (max-width: 736px) {
+  .container{
+    .content{
+      &-body{
+        .card{
+          &-left{
+            img{
+              width: 140px;
+              height: 120px;
+            }
+
+            &-desc p:nth-child(1){
+              font-size: 1rem;
+              letter-spacing: 0.2px;
+            }
+            &-desc p:nth-child(2){
+              font-size: 0.8rem;
+              color: #707070;
+            }
+          }
+
+          &-right{
+            a{
+              .button{
+                min-width: 85px;
+                padding: 0.5em 0.7em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 475px) {
+
+  .container{
+    .content{
+      &-body{
+
+        .no-card{
+          .desc{
+            width: 50%;
+          }
+
+          .desc p:nth-child(2){
+            line-height: 18px;
+          }
+  
+        }
+
+        .card{
+          flex-direction: column;
+          &-left, &-right{
+            width: 100%;
+            justify-content: center;
+            margin: 1em 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .container{
+    .content{
+      &-body{
+        .no-card{
+          .desc{
+            width: 65%;
+          }
+        }
+
+        .card{
+          &-left{
+            flex-direction: column;
+            img{
+              width: 98%;
+              max-width: 243px;
+              height: 200px;
+            }
+
+            &-desc{
+              margin-top: 10px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 

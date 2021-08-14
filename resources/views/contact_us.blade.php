@@ -75,13 +75,16 @@
 
                 <div class="box-body contact">
                     <div class="instagram">
-                        <a target="_blank" href="https://www.instagram.com/budijayamotorshow/">
-                            <div class="logo">
-                                <img width="100px" src="{{url('/assets/instagram.png')}}" alt="">
-                            </div>
-                        </a>
+                        <div class="div-logo">
+                            <a target="_blank" href="https://www.instagram.com/budijayamotorshow/">
+                                <div class="logo">
+                                    <img width="100px" src="{{url('/assets/instagram.png')}}" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        
 
-                        <a href="https://www.instagram.com/budijayamotorshow/">
+                        <a class="desc-contact" href="https://www.instagram.com/budijayamotorshow/">
                             <div>
                                 <p>budijayamotorshow</p>
                             </div>
@@ -90,21 +93,29 @@
                     </div>
 
                     <div class="olx">
-                        <a target="_blank" href="https://www.olx.co.id/profile/114216480">
-                            <div class="logo">
-                                <img width="100px" src="{{url('/assets/olx.png')}}" alt="">
-                            </div>
-                        </a>
-                        <div>
-                            <a target="_blank" href="https://www.olx.co.id/profile/114216480">Link me to OLX !</a>
+                        <div class="div-logo">
+                            <a target="_blank" href="https://www.olx.co.id/profile/114216480">
+                                <div class="logo">
+                                    <img width="100px" src="{{url('/assets/olx.png')}}" alt="">
+                                </div>
+                            </a>
+                        </div>
+                       
+                        <div class="desc-contact">
+                            <a target="_blank" href="https://www.olx.co.id/profile/114216480"><p>Link me to OLX !</p></a>
                         </div>
                     </div>
 
-                    <div class="instagram">
-                        <div class="logo">
-                            <img width="100px" src="{{url('/assets/envelope.png')}}" alt="">
+                    <div class="email">
+                        <div class="div-logo">
+                            <a>
+                                <div class="logo">
+                                    <img id="email-img" width="80px" src="{{url('/assets/envelope.png')}}" alt="">
+                                </div>
+                            </a>
                         </div>
-                        <div>
+                        
+                        <div class="desc-contact">
                             <p>budijayamotorshow@gmail.com</p>
                         </div>
                     </div>
